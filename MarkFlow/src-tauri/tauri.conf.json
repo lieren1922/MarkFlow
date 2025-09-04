@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "markflow",
+  "version": "0.1.0",
+  "identifier": "com.markflow.app",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "markflow",
+        "width": 800,
+        "height": 600
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "APP_ICONS/32x32.png",
+      "APP_ICONS/128x128.png",
+      "APP_ICONS/128x128@2x.png",
+      "APP_ICONS/icon.icns",
+      "APP_ICONS/icon.ico"
+    ]
+  }
+}
